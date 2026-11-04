@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Daily Grind — freshly brewed coffee, comforting bites, and a cozy corner to call yours.">
+  <title>The Daily Grind | Coffee & Comfort</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--cream:#f7f2e9;--paper:#fffdf8;--ink:#29231f;--muted:#766b61;--coffee:#684532;--orange:#c8794d;--sage:#879078}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,90%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#f7f2e9ed;backdrop-filter:blur(12px);border-bottom:1px solid #e9dfd2}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Playfair Display",serif;font-size:1.45rem;font-weight:700;letter-spacing:-.5px}.brand span{color:var(--orange)}
+    .navlinks{display:flex;gap:30px;font-size:.92rem;color:#594d43}.navlinks a:hover{color:var(--orange)}.nav-cta,.btn{background:var(--coffee);color:white;padding:13px 21px;border-radius:4px;font-weight:600;display:inline-block;transition:.2s}.nav-cta:hover,.btn:hover{background:#493020;transform:translateY(-2px)}
+    .hero{display:grid;grid-template-columns:1.02fr .98fr;gap:54px;align-items:center;padding:70px 0 82px}.eyebrow{text-transform:uppercase;letter-spacing:2.5px;color:var(--orange);font-size:.75rem;font-weight:700}
+    h1,h2,h3{font-family:"Playfair Display",serif}h1{font-size:clamp(3.1rem,6vw,5.5rem);line-height:1.03;letter-spacing:-2px;margin:17px 0 22px;font-weight:600}h1 em{color:var(--orange);font-style:normal}.hero p{max-width:480px;color:var(--muted);line-height:1.8;font-size:1.05rem}.hero-actions{display:flex;gap:14px;align-items:center;margin-top:30px}.btn-light{padding:13px 20px;border:1px solid #cfc1b1;border-radius:4px;font-weight:600}.hero-note{font-size:.8rem;color:var(--muted);margin-top:26px}
+    .hero-photo{height:530px;position:relative}.hero-photo img{width:100%;height:100%;object-fit:cover;border-radius:48% 48% 5px 5px}.photo-tag{position:absolute;bottom:26px;left:-28px;background:var(--paper);padding:17px 21px;box-shadow:0 12px 35px #38251520;font-family:"Playfair Display",serif;font-size:1.05rem}
+    .ticker{background:var(--coffee);color:#fff7eb;padding:17px 0;text-align:center;letter-spacing:2px;text-transform:uppercase;font-size:.76rem}
+    section{padding:88px 0}.section-head{text-align:center;max-width:620px;margin:0 auto 42px}.section-head h2{font-size:clamp(2.2rem,4vw,3.3rem);margin:10px 0}.section-head p{color:var(--muted);line-height:1.7}
+    .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.menu-card{background:var(--paper);padding:14px 14px 22px;border:1px solid #eee5d9}.menu-card img{width:100%;height:205px;object-fit:cover}.menu-card h3{font-size:1.35rem;margin:17px 5px 6px}.menu-card p{color:var(--muted);font-size:.9rem;line-height:1.6;margin:0 5px}.price{display:block;color:var(--orange);font-weight:700;margin:13px 5px 0}
+    .story{background:#e9e6da}.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.story-img{height:430px}.story-img img{width:100%;height:100%;object-fit:cover}.story-copy h2{font-size:3rem;line-height:1.1;margin:12px 0 20px}.story-copy p{color:#665e53;line-height:1.85}.story-copy .btn{margin-top:15px}
+    .visit{background:var(--paper)}.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}.visit h2{font-size:2.8rem;margin:10px 0 18px}.visit p{color:var(--muted);line-height:1.8}.details{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px}.detail strong{display:block;margin-bottom:7px}.detail span{color:var(--muted);font-size:.92rem;line-height:1.6}.contact-card{background:var(--cream);padding:30px}.contact-card h3{font-size:1.6rem;margin:0 0 18px}.contact-card a{color:var(--coffee);font-weight:700}
+    footer{background:#29231f;color:#f7f2e9;padding:28px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-row p{margin:0;color:#c8bdb0;font-size:.85rem}.social{display:flex;gap:18px;font-size:.88rem}
+    @media(max-width:760px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:48px 0 60px;gap:35px}.hero-photo{height:390px;margin-left:20px}.photo-tag{left:-18px}.menu-grid{grid-template-columns:1fr 1fr}.story-grid,.visit-grid{grid-template-columns:1fr;gap:35px}.story-img{height:320px}section{padding:65px 0}.footer-row{flex-direction:column;text-align:center}}
+    @media(max-width:480px){.menu-grid{grid-template-columns:1fr}.hero-actions{flex-wrap:wrap}.details{grid-template-columns:1fr 1fr}.hero-photo{height:330px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#">the daily <span>grind.</span></a>
+  <div class="navlinks"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#visit">Visit us</a></div>
+  <a class="nav-cta" href="#visit">Find your table</a>
+</nav></div></header>
+<main>
+  <div class="wrap"><section class="hero">
+    <div><div class="eyebrow">Good coffee. Good days.</div><h1>Your daily dose of <em>happy.</em></h1>
+      <p>Thoughtfully brewed coffee, fresh-from-the-oven treats, and a warm little space to slow down. Your favourite corner of the day is waiting.</p>
+      <div class="hero-actions"><a class="btn" href="#menu">Explore our menu</a><a class="btn-light" href="#story">Our little story</a></div>
+      <div class="hero-note">☕ Made with care · Served with a smile</div>
+    </div>
+    <div class="hero-photo"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1100&q=85" alt="Freshly brewed coffee on a cafe table"><div class="photo-tag">A little pause, a lot of flavour.</div></div>
+  </section></div>
+  <div class="ticker">Freshly brewed • Locally loved • Always welcoming</div>
+  <section id="menu"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">A few favourites</div><h2>Made to make your day</h2><p>From your first morning coffee to that afternoon treat, there’s something lovely on the menu.</p></div>
+    <div class="menu-grid">
+      <article class="menu-card"><img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=700&q=80" alt="Latte art coffee"><h3>Velvet Latte</h3><p>Double espresso with silky steamed milk.</p><span class="price">₹180</span></article>
+      <article class="menu-card"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80" alt="Freshly baked croissants"><h3>Butter Croissant</h3><p>Flaky, golden, and baked fresh every morning.</p><span class="price">₹140</span></article>
+      <article class="menu-card"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Chocolate cake"><h3>Chocolate Cloud</h3><p>Rich chocolate cake with a soft, tender crumb.</p><span class="price">₹220</span></article>
+    </div>
+  </div></section>
+  <section class="story" id="story"><div class="wrap story-grid">
+    <div class="story-img"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85" alt="Warm and welcoming cafe interior"></div>
+    <div class="story-copy"><div class="eyebrow">More than a coffee stop</div><h2>A place to feel right at home.</h2><p>We believe the best moments are often the simplest: a perfectly made cup, a familiar face, a good conversation, or a quiet moment just for you.</p><p>That’s why we keep things thoughtful, cosy, and full of the little details that make a visit feel special.</p><a class="btn" href="#visit">Come say hello</a></div>
+  </div></section>
+  <section class="visit" id="visit"><div class="wrap visit-grid">
+    <div><div class="eyebrow">Come on in</div><h2>Your table is waiting.</h2><p>Drop by for a quick coffee, settle in with your laptop, or catch up with your favourite people. We’ll save you a cosy spot.</p>
+      <div class="details"><div class="detail"><strong>Opening hours</strong><span>Monday – Sunday<br>9:00 AM – 10:00 PM</span></div><div class="detail"><strong>Find us</strong><span>Your cafe address here<br>Your city, India</span></div></div>
+    </div>
+    <div class="contact-card"><h3>Let’s connect</h3><p>Have a question, want to plan a get-together, or just want to say hi?</p><p><strong>Call:</strong> <a href="tel:+910000000000">+91 00000 00000</a></p><p><strong>Email:</strong> <a href="mailto:hello@thedailygrind.example">hello@thedailygrind.example</a></p><p><strong>Instagram:</strong> <a href="#">@thedailygrind.cafe</a></p></div>
+  </div></section>
+</main>
+<footer><div class="wrap footer-row"><a class="brand" href="#">the daily <span>grind.</span></a><p>© 2026 The Daily Grind. Made with ☕ and care.</p><div class="social"><a href="#menu">Menu</a><a href="#visit">Contact</a></div></div></footer>
+</body></html>
